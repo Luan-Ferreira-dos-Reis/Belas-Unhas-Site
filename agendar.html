@@ -48,9 +48,18 @@
             <form id="formulario" autocomplete="off">
                 <fieldset>
                     <legend>Agendamento de Serviço</legend>
-                    <label>Nome:</label><input class="campo_nome" type="text"><br>
-                    <label>Telefone:</label><input class="campo_email" type="password"><br><br>
-                    <label>Descrição e horário:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
+
+                    <label>Nome:</label> <input class="campo_nome" type="text"><br>
+
+                    <label>Telefone:</label> <input class="campo_email" type="text"><br><br>
+
+                    <label for="data">Horário:</label>
+                    <input type="time" id="appt" name="appt" min="08:00" max="18:00" required />
+                    <label for="appt"></label>
+                    <input id="date" type="date" /> <br>
+                    <small>Horário de funcionamento das 8:00 às 18:00 </small> <br>
+
+                    <label>Descrição </label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
                     <input class="btn_submit" type="submit" value="Enviar">
                 </fieldset>
             </form>
